@@ -1,0 +1,100 @@
+* {
+  background-color: #0F172A;
+  color: #E2E8F0;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  /* height: 1000px; */
+  /* border: 3px solid rgb(255, 255, 255); */
+  padding: 150px;
+  margin: 0px 150px 0px 150px;
+}
+
+body {
+  font-family: 'Inter';
+  letter-spacing: -.5px;
+}
+
+.Name_Banner {
+  grid-column: 1;
+  display: grid;
+  position: fixed;
+  /* border: 1px solid rgb(255, 122, 122); */
+
+}
+
+.About {
+  display: grid;
+  grid-column: 2;
+  align-content: start;
+  /* place-content: center; */
+  /* justify-self: auto; */
+  /* border: 3px solid rgb(0, 175, 12); */
+}
+
+.Name_Banner h1,
+h2 {
+  margin: 0px;
+}
+
+.Name_Banner h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.Name_Banner p{
+  color: #97a7be;
+  padding: 5px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: normal;
+}
+.Name_Banner h2 {
+  font-size: 20px;
+  font-weight: 570;
+}
+
+.About .about_para {
+  color: #94A3B8;
+  margin: 0px 60px 16px 60px;
+  padding: 5px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: normal;
+  justify-items: center;
+  letter-spacing: 0;
+}
+
+.About .Experience {
+  margin: 90px 2px 16px 2px;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  /* border: 1px solid rgb(211, 201, 201); */
+  row-gap: 20px;
+}
+
+.experience_child{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  color: rgb(201, 209, 237);
+  letter-spacing: 0.1px;
+  /* border: 1px solid rgb(211, 201, 201); */
+}
+.experience_child p{
+  color: #616f93;
+  font-size: small;
+}
+.experience_child span{
+  color: #E2E8F0;
+  font-weight: 550;
+  font-size:medium;
+}
+
+.experience_child .period{
+  margin: 15px;
+  color: #616f93;
+  font-size: 12px;
+  font-weight: normal;
+}
