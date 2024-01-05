@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<header><span>Microcenter</span></header>
+		<br />
+		<h1>Mac Studio Mini</h1>
+
+		<div class="gallery">
+			<img
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolawH7cIti5q-LJViiJ2ocMvOWhQmk9mDwkNeS6eu_Uc4fJaGlTDzZNa-bczW2QybvFI"
+				alt="mac mini 2023"
+				width="550"
+				height="305"
+			/>
+			<img
+				src="https://mysterio.yahoo.com/api/res/1.2/.rClNXuo_eF0Hxn9tLBcLw--/ZHByPTI7dz04NzU7YXBwaWQ9ZW5nYWRnZXQ-/https://s.yimg.com/os/creatr-uploaded-images/2023-01/0c577f60-9e70-11ed-af27-474c4168f4a2.cf.webp"
+				alt="mac mini 2023"
+				width="550"
+				height="305"
+			/>
+			<iframe
+				width="550"
+				height="305"
+				src="https://www.youtube-nocookie.com/embed/3oq__ScnynA?si=7NE3sMGfcHAzQ5FK&amp;controls=0"
+				title="YouTube video player"
+				frameborder="0"
+				allowfullscreen
+			></iframe>
+		</div>
+		
+		<h2>Product description</h2>
+		<p>
+			Apple refreshed the Mac Mini with the M2 and M2 Pro in January 2023, and
+			<br />
+			this is still the newest Mac Mini you can buy. I reviewed the base-model
+			<br />
+			Mac Mini with the M2 chip, 8GB of unified memory, and 256GB of storage.
+			<br />
+		</p>
+
+		<form
+			action="https://t3.ftcdn.net/jpg/02/91/52/22/240_F_291522205_XkrmS421FjSGTMRdTrqFZPxDY19VxpmL.jpg"
+		>
+			<label>Processor</label><br />
+			<input type="radio" id="intel" name="processor" value="Itel" required />
+			<label for="intel">Intel</label><br />
+			<input type="radio" id="m2" name="processor" value="M2" />
+			<label for="m2">M2</label>
+			<br /><br />
+			<label>Devices</label><br />
+			<input type="checkbox" id="keyboard" name="Devices" value="keyboard" />
+			<label for="keyboard">Keyboard</label><br />
+			<input type="checkbox" id="mouse" name="Devices" value="mouse" />
+			<label for="mouse">Mouse</label>
+			<br /><br />
+			<label for="ram">RAM size</label><br />
+			<select name="ram" id="ram">
+				<option value="8 GB">8 GB</option>
+				<option value="16 GB">16 GB</option>
+			</select>
+			<br /><br />
+			<label for="intrests">Choose your Intrests</label><br />
+			<select name="Intrests" id="intrests" size="5" multiple>
+				<option value="web development">Web development</option>
+				<option value="video editing">Video Editing</option>
+				<option value="research">Research</option>
+				<option value="accounting">Accounting</option>
+				<option value="multimedia">Multimedia</option>
+			</select>
+			<br /><br />
+			<label for="myfile">Upload address proof:</label>
+			<input type="file" id="myfile" name="myfile" />
+			<br /><br />
+			<input type="image" width="13%" height="13%" src="src/add_to_cart.png" />
+		</form>
+	</body>
+</html>
