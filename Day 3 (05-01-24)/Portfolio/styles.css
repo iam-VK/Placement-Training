@@ -29,11 +29,18 @@ body {
   display: grid;
   grid-column: 2;
   align-content: start;
+  padding: 50px;
   /* place-content: center; */
   /* justify-self: auto; */
   /* border: 3px solid rgb(0, 175, 12); */
 }
 
+.Name_Banner img{
+  border-radius: 100px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
 .Name_Banner h1,
 h2 {
   margin: 0px;
@@ -44,13 +51,15 @@ h2 {
   font-weight: bolder;
   margin-bottom: 10px;
 }
-.Name_Banner p{
+
+.Name_Banner p {
   color: #97a7be;
   padding: 5px;
   line-height: 1.5;
   font-size: 16px;
   font-weight: normal;
 }
+
 .Name_Banner h2 {
   font-size: 20px;
   font-weight: 570;
@@ -58,7 +67,7 @@ h2 {
 
 .About .about_para {
   color: #94A3B8;
-  margin: 0px 60px 16px 60px;
+  margin: 0px 0px 16px 0px;
   padding: 5px;
   line-height: 1.5;
   font-size: 16px;
@@ -70,31 +79,50 @@ h2 {
 .About .Experience {
   margin: 90px 2px 16px 2px;
   display: grid;
-  grid-template-rows: repeat(4,1fr);
+  grid-template-rows: repeat(4, 1fr);
   /* border: 1px solid rgb(211, 201, 201); */
-  row-gap: 20px;
+  row-gap: 18px;
 }
 
-.experience_child{
+.experience_card {
   display: grid;
   grid-template-columns: 2fr 4fr;
   color: rgb(201, 209, 237);
   letter-spacing: 0.1px;
-  /* border: 1px solid rgb(211, 201, 201); */
-}
-.experience_child p{
-  color: #616f93;
-  font-size: small;
-}
-.experience_child span{
-  color: #E2E8F0;
-  font-weight: 550;
-  font-size:medium;
+  border-radius: 10px;
+
 }
 
-.experience_child .period{
+.experience_card p {
+  color: #616f93;
+  font-size: small;
+  border-radius: 10px;
+}
+
+.experience_card span {
+  color: #E2E8F0;
+  font-weight: 550;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+.experience_card .period {
   margin: 15px;
   color: #616f93;
   font-size: 12px;
   font-weight: normal;
+  border-radius: 10px;
+}
+
+.experience_card .experience_description{
+  border-radius: 10px;
+}
+
+.experience_card:hover {
+  /* box-shadow: 0px 1px 3px rgb(103, 109, 138); */
+  filter: drop-shadow(0 0 8px #b7bbf8aa);
+  /* border: 1.5px solid rgb(211, 201, 201); */
+  /* backdrop-filter: blur(10px) saturate(100%);
+  filter: blur(4px); */
+  /* background-color: #adc1f5; */
 }
