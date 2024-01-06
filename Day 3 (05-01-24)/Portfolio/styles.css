@@ -5,11 +5,11 @@
 
 .grid-parent {
   display: grid;
-  grid-template-columns: 40fr 60fr;
+  grid-template-columns: 52fr 48fr;
   /* height: 1000px; */
   /* border: 3px solid rgb(255, 255, 255); */
-  padding: 150px;
-  margin: 0px 150px 0px 150px;
+  padding: 46px 150px;
+  margin: 0px 50px;
 }
 
 body {
@@ -21,6 +21,8 @@ body {
   grid-column: 1;
   display: grid;
   position: fixed;
+  grid-template-columns: 40fr 60fr;
+  padding-top: 50px;
   /* border: 1px solid rgb(255, 122, 122); */
 
 }
@@ -29,18 +31,22 @@ body {
   display: grid;
   grid-column: 2;
   align-content: start;
-  padding: 50px;
+  padding: 48px;
   /* place-content: center; */
   /* justify-self: auto; */
   /* border: 3px solid rgb(0, 175, 12); */
 }
 
-.Name_Banner img{
+.Name_Banner img {
   border-radius: 100px;
   text-align: center;
-  width: 150px;
-  height: 150px;
+  align-content: center;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: auto auto 10px 60px;
 }
+
 .Name_Banner h1,
 h2 {
   margin: 0px;
@@ -69,7 +75,7 @@ h2 {
   color: #94A3B8;
   margin: 0px 0px 16px 0px;
   padding: 5px;
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 16px;
   font-weight: normal;
   justify-items: center;
@@ -89,21 +95,19 @@ h2 {
   grid-template-columns: 2fr 4fr;
   color: rgb(201, 209, 237);
   letter-spacing: 0.1px;
-  border-radius: 10px;
-
+  border-radius: 20px;
 }
 
 .experience_card p {
   color: #616f93;
   font-size: small;
-  border-radius: 10px;
+  background-color: inherit
 }
 
 .experience_card span {
   color: #E2E8F0;
   font-weight: 550;
   font-size: medium;
-  border-radius: 10px;
 }
 
 .experience_card .period {
@@ -111,16 +115,16 @@ h2 {
   color: #616f93;
   font-size: 12px;
   font-weight: normal;
-  border-radius: 10px;
 }
 
-.experience_card .experience_description{
-  border-radius: 10px;
+.experience_card .experience_description {
+  padding-right: 15px;
+  border-radius: inherit;
 }
 
 .experience_card:hover {
   /* box-shadow: 0px 1px 3px rgb(103, 109, 138); */
-  filter: drop-shadow(0 0 8px #b7bbf8aa);
+  filter: drop-shadow(0 0 5px #b7bbf8aa);
   /* border: 1.5px solid rgb(211, 201, 201); */
   /* backdrop-filter: blur(10px) saturate(100%);
   filter: blur(4px); */
